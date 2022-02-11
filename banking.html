@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonali Bank</title>
+    <!-- tailwind Cdn   -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="mb-16">
+    <header>
+        <h1 class="text-5xl	text-center	mt-16 font-bold text-lime-500">Hello Md Alamin Hossain</h1>
+        <h2 class="text-3xl text-center mt-8 font-bold text-green-700">Your Current Bank
+            Statment
+        </h2>
+    </header>
+    <main class="w-3/5 mx-auto">
+        <section class="mt-16">
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-sky-400 text-white font-bold text-center p-4 rounded-lg">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h2 class="text-4xl mt-3">$ <span id="diposited-amount">00</span></h2>
+                </div>
+                <div class="bg-red-400 text-white font-bold text-center p-4 rounded-lg">
+                    <h3 class="text-2xl">Withdrow</h3>
+                    <h2 class="text-4xl mt-3">$ <span id="withdrowed-amount">00</span></h2>
+                </div>
+                <div class="bg-slate-400 text-white font-bold text-center p-4 rounded-lg">
+                    <h3 class="text-2xl">Blance</h3>
+                    <h2 class="text-4xl mt-3">$ <span id="total-balance">1000</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-8 grid grid-cols-2 gap-8 text-center">
+            <div class="rounded-lg bg-sky-300 p-4 font-semibold">
+                <h3 class="text-2xl mb-3 text-white">Please Deposit</h3>
+                <input id="new-diposit-amount" class="block p-2 mx-16 px-5 mb-3 border rounded-md border-lime-200 "
+                    type="text" name="" placeholder="Please enter Amount">
+                <button id="deposit-btn" class="font-semibold bg-green-700 px-5 py-1.5 rounded-md text-white">Deposit
+                    Now </button>
+            </div>
+            <div class="rounded-lg bg-red-300 p-4 font-semibold">
+                <h3 class="text-2xl mb-3 text-white">Please Withdrow</h3>
+                <input id="new-withdrow-amount" class="block p-2 mx-16 px-5 mb-3 border rounded-md border-lime-200 "
+                    type="text" name="" placeholder="Please enter Amount">
+                <button id="withdrow-btn" class="font-semibold bg-green-700 px-5 py-1.5 rounded-md text-white">Withdrow
+                    Now </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/banking.js"></script>
+</body>
+
+</html>
